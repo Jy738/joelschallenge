@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>particle3d</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="1800" height="1600"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        var amt = 300;
+        var ruleset =[
+    {color: "255,0,0", rate: amt, size: 100, attract: ["0,0,255", "0,255,255"], repel: ["0,255,0"], merge: true, split: true},
+    {color: "0,0,255", rate: amt, size: 80, attract: ["255,0,0", "0,255,255"], repel: ["0,255,0"], merge: true, split: true},
+    {color: "0,255,0", rate: amt, size: 130, attract: ["0,0,255", "255,0,255"], repel: ["255,0,0"], merge: true, split: true},
+    {color: "0,255,255", rate: amt, size: 50, attract: ["0,255,0", "255,0,255"], repel: ["255,0,0", "0,0,255"], merge: true, split: true},
+    {color: "255,0,255", rate: amt, size: 190, attract: ["0,255,0", "0,255,255"], repel: ["255,0,0", "0,0,255"], merge: true, split: true}
+];
+
+
+
+var particles = [];
+var friction = 0.99; // Friction coefficient
+var temperature = 90000.0; // Initial temperature in Fahrenheit
+
+function initParticles() {
+    ruleset.forEach(rule => {
+        for (let i = 0; i < rule.rate; i++) {
+            particles.push({
+                color: rule.color,
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                z: Math.random() * 100, // Adding a third dimension
+                size: rule.size / 10,
+                mass: rule.size / 10, // Mass proportional to size
+                vx: (Math.random() - 0.5) * 4 * (temperature / 100),
+                vy: (Math.random() - 0.5) * 4 * (temperature / 100),
+                vz: (Math.random() - 0.5) * 4 * (temperature / 100) // Velocity in the third dimension
+            });
+        }
+    });
+}
+
+function drawCircle(ctx, color, x, y, radius, z) {
+    // Calculate opacity based on z position
+    var maxDepth = 50; // Assuming a depth of 100 for the third dimension
+    var opacity = (z / maxDepth); // Opacity decreases as z increases
+
+    var gradient = ctx.createRadialGradient(x, y, Math.abs(radius) * 0.3, x, y, Math.abs(radius));
+    gradient.addColorStop(0, `rgba(255, 255, 255, ${opacity})`);
+    gradient.addColorStop(1, `rgba(${color}, ${opacity})`);
+    
+    ctx.beginPath();
+    ctx.arc(x, y, Math.abs(radius), 0, 2 * Math.PI, false);
+    ctx.fillStyle = gradient;
+    ctx.fill();
+    ctx.closePath();
+}
+
+// Helper function to convert hex color to RGB
+function hexToRgb(hex) {
+    var bigint = parseInt(hex.slice(1), 16);
+    var r = (bigint >> 16) & 255;
+    var g = (bigint >> 8) & 255;
+    var b = bigint & 255;
+    return { r, g, b };
+}
+
+function updateParticles() {
+    particles.forEach(p => {
+        // Apply friction
+        p.vx *= friction;
+        p.vy *= friction;
+        p.vz *= friction;
+
+        // Update position
+        p.x += p.vx;
+        p.y += p.vy;
+        p.z += p.vz;
+
+        // Check boundaries
+        if (p.x - p.size < 0 || p.x + p.size > canvas.width) {
+            p.vx *= -1;
+        }
+        if (p.y - p.size < 0 || p.y + p.size > canvas.height) {
+            p.vy *= -1;
+        }
+        if (p.z - p.size < 0 || p.z + p.size > 100) { // Assuming a depth of 100 for the third dimension
+            p.vz *= -1;
+        }
+
+        // Apply attraction and repulsion
+        particles.forEach(other => {
+            if (p !== other) {
+                var dx = other.x - p.x;
+                var dy = other.y - p.y;
+                var dz = other.z - p.z;
+                var distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
+                var minDistance = p.size + other.size;
+
+                if (distance < minDistance) {
+                    var angleXY = Math.atan2(dy, dx);
+                    var angleZ = Math.atan2(dz, distance);
+                    var force = (minDistance - distance) / minDistance;
+
+                    if (ruleset.find(rule => rule.color === p.color).attract.includes(other.color)) {
+                        p.vx += Math.cos(angleXY) * force;
+                        p.vy += Math.sin(angleXY) * force;
+                        p.vz += Math.sin(angleZ) * force;
+                    }
+                    if (ruleset.find(rule => rule.color === p.color).repel.includes(other.color)) {
+                        p.vx -= Math.cos(angleXY) * force;
+                        p.vy -= Math.sin(angleXY) * force;
+                        p.vz -= Math.sin(angleZ) * force;
+                    }
+                }
+            }
+        });
+    });
+}
+function drawSimulation() {
+    // Draw a semi-transparent rectangle to create motion blur effect
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.4)'; // Adjust alpha value for more or less blur
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Sort particles by z value for z-ordering
+    particles.sort((a, b) => a.z - b.z);
+    particles.forEach(p => {
+        // Project the 3D position onto the 2D canvas with perspective
+        var scale = 1 + p.z / 10;
+        var x2D = p.x * scale;
+        var y2D = p.y * scale;
+        var size2D = p.size * scale;
+        var brightness = (p.z / 100); // Adjust brightness based on distance
+        drawCircle(ctx, p.color, x2D, y2D, size2D, p.z);
+    });
+    updateParticles();
+    setTimeout(drawSimulation, 5); // Adjust the delay (in milliseconds) to control the speed
+}
+
+initParticles();
+drawSimulation();
+    </script>
+</body>
+</html>
