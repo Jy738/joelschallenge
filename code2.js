@@ -1162,7 +1162,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "decaybullet") >= 0.4;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "decaybullet") >= 0.5;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("New3DBox8"), gdjs.GameSceneCode.GDNew3DBox8Objects1);
 {for(var i = 0, len = gdjs.GameSceneCode.GDNew3DBox8Objects1.length ;i < len;++i) {
