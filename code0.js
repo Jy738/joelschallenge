@@ -20,6 +20,10 @@ gdjs.menuCode.GDNewText2Objects1= [];
 gdjs.menuCode.GDNewText2Objects2= [];
 gdjs.menuCode.GDNewSprite7Objects1= [];
 gdjs.menuCode.GDNewSprite7Objects2= [];
+gdjs.menuCode.GDNew3DBox13Objects1= [];
+gdjs.menuCode.GDNew3DBox13Objects2= [];
+gdjs.menuCode.GDNew3DBox12Objects1= [];
+gdjs.menuCode.GDNew3DBox12Objects2= [];
 
 
 gdjs.menuCode.mapOfGDgdjs_9546menuCode_9546GDNewSprite3Objects1Objects = Hashtable.newFrom({"NewSprite3": gdjs.menuCode.GDNewSprite3Objects1});
@@ -125,6 +129,10 @@ gdjs.menuCode.GDNewText2Objects1.length = 0;
 gdjs.menuCode.GDNewText2Objects2.length = 0;
 gdjs.menuCode.GDNewSprite7Objects1.length = 0;
 gdjs.menuCode.GDNewSprite7Objects2.length = 0;
+gdjs.menuCode.GDNew3DBox13Objects1.length = 0;
+gdjs.menuCode.GDNew3DBox13Objects2.length = 0;
+gdjs.menuCode.GDNew3DBox12Objects1.length = 0;
+gdjs.menuCode.GDNew3DBox12Objects2.length = 0;
 
 gdjs.menuCode.eventsList0(runtimeScene);
 gdjs.menuCode.GDNewSpriteObjects1.length = 0;
@@ -147,6 +155,10 @@ gdjs.menuCode.GDNewText2Objects1.length = 0;
 gdjs.menuCode.GDNewText2Objects2.length = 0;
 gdjs.menuCode.GDNewSprite7Objects1.length = 0;
 gdjs.menuCode.GDNewSprite7Objects2.length = 0;
+gdjs.menuCode.GDNew3DBox13Objects1.length = 0;
+gdjs.menuCode.GDNew3DBox13Objects2.length = 0;
+gdjs.menuCode.GDNew3DBox12Objects1.length = 0;
+gdjs.menuCode.GDNew3DBox12Objects2.length = 0;
 
 
 return;

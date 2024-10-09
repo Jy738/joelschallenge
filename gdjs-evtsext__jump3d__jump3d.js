@@ -549,7 +549,7 @@ gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext = {};
 gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.userFunc0x904968 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.userFunc0xcc73b8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 // Formulas used in this extension were generated from a math model.
 // They are probably not understandable on their own.
@@ -613,7 +613,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Jump3D_
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.GDObjectObjects1);
-gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.userFunc0x904968(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.userFunc0xcc73b8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

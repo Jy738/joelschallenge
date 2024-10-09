@@ -10,6 +10,10 @@ gdjs.gameoverCode.GDNewSprite4Objects1= [];
 gdjs.gameoverCode.GDNewSprite4Objects2= [];
 gdjs.gameoverCode.GDNewSprite7Objects1= [];
 gdjs.gameoverCode.GDNewSprite7Objects2= [];
+gdjs.gameoverCode.GDNew3DBox13Objects1= [];
+gdjs.gameoverCode.GDNew3DBox13Objects2= [];
+gdjs.gameoverCode.GDNew3DBox12Objects1= [];
+gdjs.gameoverCode.GDNew3DBox12Objects2= [];
 
 
 gdjs.gameoverCode.mapOfGDgdjs_9546gameoverCode_9546GDNewSprite3Objects1Objects = Hashtable.newFrom({"NewSprite3": gdjs.gameoverCode.GDNewSprite3Objects1});
@@ -91,6 +95,10 @@ gdjs.gameoverCode.GDNewSprite4Objects1.length = 0;
 gdjs.gameoverCode.GDNewSprite4Objects2.length = 0;
 gdjs.gameoverCode.GDNewSprite7Objects1.length = 0;
 gdjs.gameoverCode.GDNewSprite7Objects2.length = 0;
+gdjs.gameoverCode.GDNew3DBox13Objects1.length = 0;
+gdjs.gameoverCode.GDNew3DBox13Objects2.length = 0;
+gdjs.gameoverCode.GDNew3DBox12Objects1.length = 0;
+gdjs.gameoverCode.GDNew3DBox12Objects2.length = 0;
 
 gdjs.gameoverCode.eventsList0(runtimeScene);
 gdjs.gameoverCode.GDNewSpriteObjects1.length = 0;
@@ -103,6 +111,10 @@ gdjs.gameoverCode.GDNewSprite4Objects1.length = 0;
 gdjs.gameoverCode.GDNewSprite4Objects2.length = 0;
 gdjs.gameoverCode.GDNewSprite7Objects1.length = 0;
 gdjs.gameoverCode.GDNewSprite7Objects2.length = 0;
+gdjs.gameoverCode.GDNew3DBox13Objects1.length = 0;
+gdjs.gameoverCode.GDNew3DBox13Objects2.length = 0;
+gdjs.gameoverCode.GDNew3DBox12Objects1.length = 0;
+gdjs.gameoverCode.GDNew3DBox12Objects2.length = 0;
 
 
 return;

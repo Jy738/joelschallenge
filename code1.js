@@ -6,6 +6,10 @@ gdjs.cutscene1Code.GDNewTextObjects1= [];
 gdjs.cutscene1Code.GDNewTextObjects2= [];
 gdjs.cutscene1Code.GDNewSprite7Objects1= [];
 gdjs.cutscene1Code.GDNewSprite7Objects2= [];
+gdjs.cutscene1Code.GDNew3DBox13Objects1= [];
+gdjs.cutscene1Code.GDNew3DBox13Objects2= [];
+gdjs.cutscene1Code.GDNew3DBox12Objects1= [];
+gdjs.cutscene1Code.GDNew3DBox12Objects2= [];
 
 
 gdjs.cutscene1Code.eventsList0 = function(runtimeScene) {
@@ -35,7 +39,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18027236);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18254068);
 }
 }
 if (isConditionTrue_0) {
@@ -77,6 +81,10 @@ gdjs.cutscene1Code.GDNewTextObjects1.length = 0;
 gdjs.cutscene1Code.GDNewTextObjects2.length = 0;
 gdjs.cutscene1Code.GDNewSprite7Objects1.length = 0;
 gdjs.cutscene1Code.GDNewSprite7Objects2.length = 0;
+gdjs.cutscene1Code.GDNew3DBox13Objects1.length = 0;
+gdjs.cutscene1Code.GDNew3DBox13Objects2.length = 0;
+gdjs.cutscene1Code.GDNew3DBox12Objects1.length = 0;
+gdjs.cutscene1Code.GDNew3DBox12Objects2.length = 0;
 
 gdjs.cutscene1Code.eventsList0(runtimeScene);
 gdjs.cutscene1Code.GDNewVideoObjects1.length = 0;
@@ -85,6 +93,10 @@ gdjs.cutscene1Code.GDNewTextObjects1.length = 0;
 gdjs.cutscene1Code.GDNewTextObjects2.length = 0;
 gdjs.cutscene1Code.GDNewSprite7Objects1.length = 0;
 gdjs.cutscene1Code.GDNewSprite7Objects2.length = 0;
+gdjs.cutscene1Code.GDNew3DBox13Objects1.length = 0;
+gdjs.cutscene1Code.GDNew3DBox13Objects2.length = 0;
+gdjs.cutscene1Code.GDNew3DBox12Objects1.length = 0;
+gdjs.cutscene1Code.GDNew3DBox12Objects2.length = 0;
 
 
 return;

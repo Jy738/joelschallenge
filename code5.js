@@ -10,6 +10,10 @@ gdjs.winCode.GDNewSprite4Objects1= [];
 gdjs.winCode.GDNewSprite4Objects2= [];
 gdjs.winCode.GDNewSprite7Objects1= [];
 gdjs.winCode.GDNewSprite7Objects2= [];
+gdjs.winCode.GDNew3DBox13Objects1= [];
+gdjs.winCode.GDNew3DBox13Objects2= [];
+gdjs.winCode.GDNew3DBox12Objects1= [];
+gdjs.winCode.GDNew3DBox12Objects2= [];
 
 
 gdjs.winCode.mapOfGDgdjs_9546winCode_9546GDNewSprite3Objects1Objects = Hashtable.newFrom({"NewSprite3": gdjs.winCode.GDNewSprite3Objects1});
@@ -72,6 +76,10 @@ gdjs.winCode.GDNewSprite4Objects1.length = 0;
 gdjs.winCode.GDNewSprite4Objects2.length = 0;
 gdjs.winCode.GDNewSprite7Objects1.length = 0;
 gdjs.winCode.GDNewSprite7Objects2.length = 0;
+gdjs.winCode.GDNew3DBox13Objects1.length = 0;
+gdjs.winCode.GDNew3DBox13Objects2.length = 0;
+gdjs.winCode.GDNew3DBox12Objects1.length = 0;
+gdjs.winCode.GDNew3DBox12Objects2.length = 0;
 
 gdjs.winCode.eventsList0(runtimeScene);
 gdjs.winCode.GDNewSpriteObjects1.length = 0;
@@ -84,6 +92,10 @@ gdjs.winCode.GDNewSprite4Objects1.length = 0;
 gdjs.winCode.GDNewSprite4Objects2.length = 0;
 gdjs.winCode.GDNewSprite7Objects1.length = 0;
 gdjs.winCode.GDNewSprite7Objects2.length = 0;
+gdjs.winCode.GDNew3DBox13Objects1.length = 0;
+gdjs.winCode.GDNew3DBox13Objects2.length = 0;
+gdjs.winCode.GDNew3DBox12Objects1.length = 0;
+gdjs.winCode.GDNew3DBox12Objects2.length = 0;
 
 
 return;

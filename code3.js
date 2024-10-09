@@ -212,6 +212,14 @@ gdjs.infiniteCode.GDNewSprite7Objects1= [];
 gdjs.infiniteCode.GDNewSprite7Objects2= [];
 gdjs.infiniteCode.GDNewSprite7Objects3= [];
 gdjs.infiniteCode.GDNewSprite7Objects4= [];
+gdjs.infiniteCode.GDNew3DBox13Objects1= [];
+gdjs.infiniteCode.GDNew3DBox13Objects2= [];
+gdjs.infiniteCode.GDNew3DBox13Objects3= [];
+gdjs.infiniteCode.GDNew3DBox13Objects4= [];
+gdjs.infiniteCode.GDNew3DBox12Objects1= [];
+gdjs.infiniteCode.GDNew3DBox12Objects2= [];
+gdjs.infiniteCode.GDNew3DBox12Objects3= [];
+gdjs.infiniteCode.GDNew3DBox12Objects4= [];
 
 
 gdjs.infiniteCode.eventsList0 = function(runtimeScene) {
@@ -247,7 +255,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "timer") >= 59.99;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14012972);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18488524);
 }
 }
 if (isConditionTrue_0) {
@@ -475,7 +483,7 @@ if(isConditionTrue_1) {
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18077716);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18499220);
 }
 }
 if (isConditionTrue_0) {
@@ -817,7 +825,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDCameraObjects1Objects, gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDjew_95959595startObjects1Objects, 100, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18290172);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18502580);
 }
 }
 if (isConditionTrue_0) {
@@ -844,7 +852,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDCameraObjects1Objects, gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDjew_95959595startObjects1Objects, 100, true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16496980);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18503540);
 }
 }
 if (isConditionTrue_0) {
@@ -905,7 +913,7 @@ if(isConditionTrue_1) {
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16708292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18505980);
 }
 }
 if (isConditionTrue_0) {
@@ -1022,7 +1030,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDCameraObjects1Objects, gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDjew_95959595shopObjects1Objects, 400, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18281612);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18512316);
 }
 }
 if (isConditionTrue_0) {
@@ -1057,7 +1065,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDCameraObjects1Objects, gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDjew_95959595helpObjects1Objects, 400, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14082700);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18513196);
 }
 }
 if (isConditionTrue_0) {
@@ -1092,7 +1100,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDCameraObjects1Objects, gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDjew_95959595shopObjects1Objects, 400, true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18272308);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18514076);
 }
 }
 if (isConditionTrue_0) {
@@ -1141,7 +1149,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13663820);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18515588);
 }
 }
 if (isConditionTrue_0) {
@@ -1170,7 +1178,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDNew3DBox2Objects1Objects, gdjs.infiniteCode.mapOfGDgdjs_9546infiniteCode_9546GDNew3DBox8Objects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14021324);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18518532);
 }
 }
 if (isConditionTrue_0) {
@@ -1569,6 +1577,14 @@ gdjs.infiniteCode.GDNewSprite7Objects1.length = 0;
 gdjs.infiniteCode.GDNewSprite7Objects2.length = 0;
 gdjs.infiniteCode.GDNewSprite7Objects3.length = 0;
 gdjs.infiniteCode.GDNewSprite7Objects4.length = 0;
+gdjs.infiniteCode.GDNew3DBox13Objects1.length = 0;
+gdjs.infiniteCode.GDNew3DBox13Objects2.length = 0;
+gdjs.infiniteCode.GDNew3DBox13Objects3.length = 0;
+gdjs.infiniteCode.GDNew3DBox13Objects4.length = 0;
+gdjs.infiniteCode.GDNew3DBox12Objects1.length = 0;
+gdjs.infiniteCode.GDNew3DBox12Objects2.length = 0;
+gdjs.infiniteCode.GDNew3DBox12Objects3.length = 0;
+gdjs.infiniteCode.GDNew3DBox12Objects4.length = 0;
 
 gdjs.infiniteCode.eventsList8(runtimeScene);
 gdjs.infiniteCode.GDWallObjects1.length = 0;
@@ -1783,6 +1799,14 @@ gdjs.infiniteCode.GDNewSprite7Objects1.length = 0;
 gdjs.infiniteCode.GDNewSprite7Objects2.length = 0;
 gdjs.infiniteCode.GDNewSprite7Objects3.length = 0;
 gdjs.infiniteCode.GDNewSprite7Objects4.length = 0;
+gdjs.infiniteCode.GDNew3DBox13Objects1.length = 0;
+gdjs.infiniteCode.GDNew3DBox13Objects2.length = 0;
+gdjs.infiniteCode.GDNew3DBox13Objects3.length = 0;
+gdjs.infiniteCode.GDNew3DBox13Objects4.length = 0;
+gdjs.infiniteCode.GDNew3DBox12Objects1.length = 0;
+gdjs.infiniteCode.GDNew3DBox12Objects2.length = 0;
+gdjs.infiniteCode.GDNew3DBox12Objects3.length = 0;
+gdjs.infiniteCode.GDNew3DBox12Objects4.length = 0;
 
 
 return;
