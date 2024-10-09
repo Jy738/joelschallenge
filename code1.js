@@ -35,7 +35,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16748532);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18027236);
 }
 }
 if (isConditionTrue_0) {

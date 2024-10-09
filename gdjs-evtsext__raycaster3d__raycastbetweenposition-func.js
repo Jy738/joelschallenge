@@ -9,7 +9,7 @@ gdjs.evtsExt__Raycaster3D__RaycastBetweenPosition = {};
 gdjs.evtsExt__Raycaster3D__RaycastBetweenPosition.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Raycaster3D__RaycastBetweenPosition.userFunc0xd039f0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Raycaster3D__RaycastBetweenPosition.userFunc0xaa5ca0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue =
     gdjs.__raycaster3DExtension.raycaster.recastBetweenPosition(
@@ -32,7 +32,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Raycast
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Raycaster3D__RaycastBetweenPosition.GDObjectObjects1);
-gdjs.evtsExt__Raycaster3D__RaycastBetweenPosition.userFunc0xd039f0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Raycaster3D__RaycastBetweenPosition.userFunc0xaa5ca0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

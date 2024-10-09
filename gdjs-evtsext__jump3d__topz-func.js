@@ -9,7 +9,7 @@ gdjs.evtsExt__Jump3D__TopZ = {};
 gdjs.evtsExt__Jump3D__TopZ.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Jump3D__TopZ.userFunc0xf20738 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Jump3D__TopZ.userFunc0xddf6d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if (objects.length === 0) {
     return;
@@ -26,7 +26,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Jump3D_
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Jump3D__TopZ.GDObjectObjects1);
-gdjs.evtsExt__Jump3D__TopZ.userFunc0xf20738(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Jump3D__TopZ.userFunc0xddf6d8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

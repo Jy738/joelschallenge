@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CameraShake3D__LayerName !== "undefined") {
 gdjs.evtsExt__CameraShake3D__LayerName = {};
 
 
-gdjs.evtsExt__CameraShake3D__LayerName.userFunc0xce2650 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CameraShake3D__LayerName.userFunc0xd530b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const layerIndex = eventsFunctionContext.getArgument("LayerIndex");
 
@@ -25,7 +25,7 @@ gdjs.evtsExt__CameraShake3D__LayerName.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__CameraShake3D__LayerName.userFunc0xce2650(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CameraShake3D__LayerName.userFunc0xd530b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
